@@ -1,4 +1,4 @@
-## Centralized Online Banking With Crypto Mixture
+# Centralized Online Banking With Crypto Mixture
 
 This Django project provides a centralized online banking system with a mixture of traditional and cryptocurrency functionalities. It includes user authentication, product management, and transaction handling features.
 
@@ -73,6 +73,23 @@ urlpatterns = [
 - `/products/<int:id>/buy`: View to handle product purchase.
 
 The commented-out routes are placeholders for future functionality and will be updated accordingly.
+
+### CORS Configuration (For Frontend Development)
+
+If you are developing any frontend and need to communicate with this backend, you will need to enable CORS (Cross-Origin Resource Sharing) in the Django settings. 
+
+Add the following code to your `settings.py` file:
+
+```python
+CORS_ORIGIN_ALLOW_ALL = True
+
+# If you want to whitelist specific frontend app URLs, uncomment the following line and add your frontend app URL(s) to the list:
+# CORS_ORIGIN_WHITELIST = [
+#     'add your frontend app URL here'
+# ]
+```
+
+This will allow requests from all origins during development. Ensure to configure CORS properly in production for security reasons.
 
 ### Contribution Guidelines
 
