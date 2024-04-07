@@ -1,4 +1,3 @@
-```markdown
 ## Centralized Online Banking With Crypto Mixture
 
 This Django project provides a centralized online banking system with a mixture of traditional and cryptocurrency functionalities. It includes user authentication, product management, and transaction handling features.
